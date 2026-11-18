@@ -9,7 +9,7 @@ Wspólny standard KubaBuba: `D:\DEV\KUBABUBA_WORK\CLAUDE.md`. Tu tylko to, co sp
 - **Zmiana profilu:** z wypożyczania/organizacji atrakcji → **agencja eventowa** (integracje, pikniki firmowe, festyny, wyjazdy, team building). Atrakcje pokazujemy jako „klocki” programu.
 - Zawód nieregulowany — można pisać sprzedażowo, ale tylko fakty ze starej strony albo potwierdzone przez klienta (liczby w hero oznaczone w `data.md` jako ❓).
 - To pierwszy klient zarobkowy KubaBuba — na razie **strona demonstracyjna do wyceny**.
-- Repozytorium: **commitpanic/adventurequads** (publiczne, `main`); deploy przez Actions bez `*.md` i `dane/`.
+- Repozytorium: **commitpanic/adventurequad** (publiczne, `main`); deploy przez Actions bez `*.md` i `dane/`.
 
 ## Decyzje
 - **Strona wizytówka: bez formularza i bez konfiguratora** (uzgodnione z klientem) — sekcja Kontakt to tylko telefony, e-mail, adres, mapa po kliknięciu.

@@ -46,7 +46,7 @@ Wszystkie kolory są w zmiennych CSS (`:root` w `style.css`). Warianty: **Nocny 
 
 ## Deploy
 
-Repozytorium: https://github.com/commitpanic/adventurequads · DEV: https://commitpanic.github.io/adventurequads/
+Repozytorium: https://github.com/commitpanic/adventurequad · DEV: https://commitpanic.github.io/adventurequad/
 
 Push na `main` → GitHub Actions (`.github/workflows/pages.yml`) → GitHub Pages. Publikowane są pliki strony bez `dane/`, `.claude/`, `.github/` i `*.md`. W repo Pages ma źródło „GitHub Actions” (włączone).
 

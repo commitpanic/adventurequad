@@ -47,7 +47,7 @@
 | Domena docelowa * | adventurequad.pl |
 | Poczta na domenie | **TAK (norbert@adventurequad.pl) — przy zmianie DNS nie ruszać rekordów MX!** |
 | Obecna strona | CMS agencji Avangardo (+ SEO Sempire). Dużo podstron SEO `/oferta/...` → **przy PROD zrobić przekierowania 301** lub zachować adresy |
-| Hosting DEV | GitHub Pages (repo `commitpanic/adventurequads`) |
+| Hosting DEV | GitHub Pages (repo `commitpanic/adventurequad`) |
 | Hosting PROD | ❓ GitHub Pages + CNAME / hosting klienta |
 
 ## 3. Zakres strony
@@ -117,7 +117,7 @@ Przeniesione ze starej strony (5 pytań) — ❓ akceptacja.
 | Pole | Wartość |
 |---|---|
 | Stack | HTML + CSS + Vanilla JS (standard KubaBuba) |
-| Repozytorium | `commitpanic/adventurequads` (publiczne) |
+| Repozytorium | `commitpanic/adventurequad` (publiczne) |
 | Google Search Console | ❓ (stara strona ma pozycjonowanie — sprawdzić, które podstrony dają ruch) |
 | Integracje | brak (bez formularza) |
 

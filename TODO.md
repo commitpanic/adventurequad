@@ -21,8 +21,8 @@
 - [ ] Analityka bez cookies (Plausible/Umami), jeśli klient chce statystyki
 
 ## Technika
-- [x] Repozytorium `commitpanic/adventurequads` + workflow GitHub Pages
-- [x] Pages włączone (GitHub Actions) — DEV: https://commitpanic.github.io/adventurequads/
+- [x] Repozytorium `commitpanic/adventurequad` + workflow GitHub Pages
+- [x] Pages włączone (GitHub Actions) — DEV: https://commitpanic.github.io/adventurequad/
 - [x] Bez formularza i konfiguratora — kontakt tylko dane kontaktowe (uzgodnione z klientem)
 - [ ] Przed PROD: usunąć `assets/js/demo-theme.js`, jego `<script>` i fragment `?motyw` w `<head>`
 - [ ] Lighthouse na DEV (Performance / Accessibility / SEO ≥ 90)
