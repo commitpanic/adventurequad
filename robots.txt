@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO po ustaleniu domeny:
+# Sitemap: https://www.adventurequad.pl/sitemap.xml

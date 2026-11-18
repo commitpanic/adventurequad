@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="pl" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adventure Quad — agencja eventowa | imprezy integracyjne, pikniki firmowe, festyny</title>
+<meta name="description" content="Organizujemy imprezy integracyjne, pikniki firmowe, festyny i team building w lubuskim, wielkopolskim, dolnośląskim i zachodniopomorskim. Scenariusz, instruktorzy, własny sprzęt, catering i logistyka.">
+<meta name="theme-color" content="#0c0e0a">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Adventure Quad">
+<meta property="og:title" content="Adventure Quad — eventy, które ruszają z miejsca">
+<meta property="og:description" content="Imprezy integracyjne, pikniki firmowe, festyny i team building. Od scenariusza po sprzątanie terenu — jedna firma, cały event.">
+<!-- TODO po ustaleniu domeny: og:url, og:image (1200×630), canonical -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>/* DEMO: wariant kolorystyczny (?motyw=… lub zapamiętany) — usunąć przed PROD */(function(d){d.classList.remove("no-js");try{var m=new URLSearchParams(location.search).get("motyw")||localStorage.getItem("aq-theme");if(m&&m!=="teren")d.setAttribute("data-theme",m);}catch(e){}})(document.documentElement);</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Adventure Quad",
+  "description": "Agencja eventowa: imprezy integracyjne, pikniki firmowe, festyny, wyjazdy integracyjne, team building i imprezy scenariuszowe w Bunkrach MRU.",
+  "telephone": "+48 603 805 651",
+  "email": "norbert@adventurequad.pl",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Kupienino 14",
+    "postalCode": "66-200",
+    "addressLocality": "Świebodzin",
+    "addressRegion": "lubuskie",
+    "addressCountry": "PL"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 52.247, "longitude": 15.533 },
+  "areaServed": [
+    { "@type": "State", "name": "województwo lubuskie" },
+    { "@type": "State", "name": "województwo wielkopolskie" },
+    { "@type": "State", "name": "województwo dolnośląskie" },
+    { "@type": "State", "name": "województwo zachodniopomorskie" }
+  ],
+  "sameAs": ["https://www.facebook.com/imprezyintegracyjne/"],
+  "taxID": "9271461746"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Czym różni się Adventure Quad od wypożyczalni quadów?", "acceptedAnswer": { "@type": "Answer", "text": "Jesteśmy agencją eventową, nie wypożyczalnią sprzętu. Zajmujemy się całą organizacją wydarzenia — od scenariusza, przez instruktorów i transport, po catering i logistykę na miejscu. Quady czy buggy to jedna z wielu atrakcji, a nie cała oferta." } },
+    { "@type": "Question", "name": "Dla ilu osób możecie zorganizować event?", "acceptedAnswer": { "@type": "Answer", "text": "Od kameralnych integracji dla kilkunastu osób po pikniki firmowe dla kilkuset uczestników z rodzinami. Dzięki własnemu sprzętowi skalujemy program bez szukania dodatkowych podwykonawców." } },
+    { "@type": "Question", "name": "Z jakim wyprzedzeniem trzeba się zgłosić?", "acceptedAnswer": { "@type": "Answer", "text": "Mniejsze integracje da się przygotować w kilka tygodni. Duże pikniki firmowe warto planować z kilkumiesięcznym wyprzedzeniem — szczególnie na sezon wiosenno-letni." } },
+    { "@type": "Question", "name": "Czy program można dopasować do budżetu?", "acceptedAnswer": { "@type": "Answer", "text": "Tak. Program budujemy indywidualnie na podstawie budżetu, liczby uczestników i celu wydarzenia. Może to być jedna główna atrakcja albo kilka aktywności połączonych w scenariusz na cały dzień." } },
+    { "@type": "Question", "name": "Czy zajmujecie się noclegami i wyżywieniem?", "acceptedAnswer": { "@type": "Answer", "text": "Tak — przy większych wydarzeniach, zwłaszcza wyjazdach integracyjnych, zapewniamy hotel i catering. Nie trzeba ustalać tego osobno z innym dostawcą." } }
+  ]
+}
+</script>
+</head>
+<body data-page="home">
+
+<div id="header-placeholder"></div>
+
+<main id="main">
+
+  <!-- ══ HERO ══════════════════════════════════════════════ -->
+  <section class="hero" aria-labelledby="hero-title" data-nav-clear>
+    <canvas class="hero-canvas" data-topo="hero" aria-hidden="true"></canvas>
+
+    <div class="hero-hud" data-hud aria-hidden="true">
+      <span class="hud-row"><span class="hud-dot"></span><strong>Teren pod kursorem</strong></span>
+      <span class="hud-row"><span data-hud-lat>52.2470° N</span><span data-hud-lon>15.5330° E</span></span>
+      <span class="hud-row">wys. <strong data-hud-alt>118 m n.p.m.</strong></span>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <p class="eyebrow intro" style="--d:.05s">Agencja eventowa · Świebodzin</p>
+        <h1 id="hero-title">
+          <span class="line intro" style="--d:.12s">Eventy, które</span>
+          <span class="line intro" style="--d:.22s">ruszają <em class="squiggle">z miejsca<svg viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 12 C 50 3, 95 16, 150 9 S 250 3, 297 10"/></svg></em>.</span>
+        </h1>
+        <p class="hero-kicker intro" style="--d:.34s">
+          Organizujemy
+          <span class="rotator" aria-hidden="true" data-words="pikniki firmowe|imprezy integracyjne|festyny i dni miast|team building|wyjazdy firmowe|eventy dla dzieci"><span class="rotator-word">pikniki firmowe</span></span>
+          <span class="visually-hidden">pikniki firmowe, imprezy integracyjne, festyny i dni miast, team building, wyjazdy firmowe i eventy dla dzieci</span>
+        </p>
+        <p class="hero-lead intro" style="--d:.42s">Scenariusz, instruktorzy, własny sprzęt, transport i catering — jedna firma odpowiada za cały dzień. Od kameralnej integracji po piknik dla kilkuset osób z rodzinami.</p>
+        <div class="hero-actions intro" style="--d:.5s">
+          <a href="oferta.html" class="btn btn-primary">Zobacz ofertę
+            <svg class="ic arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="#kontakt" class="btn btn-ghost">Porozmawiajmy</a>
+        </div>
+      </div>
+
+      <ul class="hero-stats intro" style="--d:.62s">
+        <li><span class="stat-num"><span data-count="10">10</span><span class="unit">+</span></span><span class="stat-label">lat organizacji imprez dla firm</span></li>
+        <li><span class="stat-num"><span data-count="20">20</span><span class="unit">+</span></span><span class="stat-label">atrakcji do złożenia w program</span></li>
+        <li><span class="stat-num"><span data-count="4">4</span></span><span class="stat-label">województwa — od Szczecina po Karpacz</span></li>
+        <li><span class="stat-num">1</span><span class="stat-label">opiekun eventu od pierwszego telefonu do rozliczenia</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ══ TAŚMY ═════════════════════════════════════════════ -->
+  <div class="tapes" aria-hidden="true">
+    <div class="tape tape-2">
+      <div class="tape-track">
+        <span class="tape-item">Quady</span><span class="tape-item">Buggy</span><span class="tape-item">Paintball</span><span class="tape-item">Byk rodeo</span><span class="tape-item">Żyroskop</span><span class="tape-item">Bungee run</span><span class="tape-item">Mega piłkarzyki</span><span class="tape-item">Strzelnica</span><span class="tape-item">Ścianka wspinaczkowa</span><span class="tape-item">Fotobudka</span><span class="tape-item">Catering</span><span class="tape-item">Scena i nagłośnienie</span>
+      </div>
+    </div>
+    <div class="tape tape-1">
+      <div class="tape-track">
+        <span class="tape-item">Imprezy integracyjne</span><span class="tape-item">Pikniki firmowe</span><span class="tape-item">Festyny</span><span class="tape-item">Team building</span><span class="tape-item">Wyjazdy integracyjne</span><span class="tape-item">Eventy dla dzieci</span><span class="tape-item">Bunkry MRU</span><span class="tape-item">Wieczory kawalerskie</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ CO ORGANIZUJEMY ═══════════════════════════════════ -->
+  <section class="section" id="eventy" aria-labelledby="eventy-title" data-nav-clear>
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Co organizujemy</p>
+        <h2 id="eventy-title">Od kameralnej integracji po festyn dla całego miasta</h2>
+        <p>Każdy event składamy pod konkretną grupę: jej wielkość, budżet, cel i porę roku. Atrakcje to klocki — scenariusz, logistyka i bezpieczeństwo są po naszej stronie.</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card spotlight reveal">
+          <span class="card-num">01</span>
+          <div class="card-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 19.5c.6-3.4 3-5.3 6-5.3s5.4 1.9 6 5.3"/><circle cx="17" cy="9" r="2.5"/><path d="M16.2 14.3c2.6-.3 4.4 1.3 4.9 4.2"/></svg></div>
+          <h3>Imprezy integracyjne</h3>
+          <p>Pół dnia albo cały weekend: rywalizacja w drużynach, atrakcje w terenie i wieczór przy wspólnym stole. Również spotkania wigilijne.</p>
+          <a class="link-arrow card-link" href="oferta.html#integracje">Szczegóły <span class="visually-hidden">— imprezy integracyjne</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </article>
+        <article class="card spotlight reveal" style="--d:.06s">
+          <span class="card-num">02</span>
+          <div class="card-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20 12 5l8.5 15"/><path d="M2.5 20h19"/><path d="M9.5 20 12 15l2.5 5"/><path d="M12 5V2.5l3 1.1-3 1.1"/></svg></div>
+          <h3>Pikniki firmowe</h3>
+          <p>Pracownicy z rodzinami w plenerze: strefy atrakcji dla dorosłych i dzieci, catering, scena i nagłośnienie. Sprzątamy po ostatnim gościu.</p>
+          <a class="link-arrow card-link" href="oferta.html#pikniki-firmowe">Szczegóły <span class="visually-hidden">— pikniki firmowe</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </article>
+        <article class="card spotlight reveal" style="--d:.12s">
+          <span class="card-num">03</span>
+          <div class="card-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5c6 4 14 4 20 0"/><path d="M5.6 6.7 6.6 12l2.5-4.6"/><path d="M10.3 7.9 12 13l1.7-5.1"/><path d="M14.9 7.4 17.4 12l1-5.3"/><path d="M4 21v-5M20 21v-5"/></svg></div>
+          <h3>Festyny i dni miast</h3>
+          <p>Dla samorządów i instytucji: kompletne strefy atrakcji, oprawa techniczna i obsługa przygotowana na kilkaset osób jednocześnie.</p>
+          <a class="link-arrow card-link" href="oferta.html#festyny">Szczegóły <span class="visually-hidden">— festyny i dni miast</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </article>
+        <article class="card spotlight reveal">
+          <span class="card-num">04</span>
+          <div class="card-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="12" rx="2.5"/><path d="M3 11h18M8.5 4.5V11M15.5 4.5V11"/><circle cx="7.5" cy="18.5" r="1.8"/><circle cx="16.5" cy="18.5" r="1.8"/></svg></div>
+          <h3>Wyjazdy integracyjne</h3>
+          <p>Hotel, transport, agenda spotkania i atrakcje — z opieką na miejscu przez cały pobyt. Łączymy szkolenie z odpoczynkiem.</p>
+          <a class="link-arrow card-link" href="oferta.html#wyjazdy">Szczegóły <span class="visually-hidden">— wyjazdy integracyjne</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </article>
+        <article class="card spotlight reveal" style="--d:.06s">
+          <span class="card-num">05</span>
+          <div class="card-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="12" r="5.5"/><circle cx="15" cy="12" r="5.5"/></svg></div>
+          <h3>Team building</h3>
+          <p>Zadania, których nie da się wykonać w pojedynkę: narty wieloosobowe, hydrozagadka, operacja transport. Zespół musi na sobie polegać.</p>
+          <a class="link-arrow card-link" href="oferta.html#team-building">Szczegóły <span class="visually-hidden">— team building</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </article>
+        <article class="card spotlight reveal" style="--d:.12s">
+          <span class="card-num">06</span>
+          <div class="card-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8c3.3 0 5.5 2.6 5.5 5.8 0 3.6-2.8 6.7-5.5 6.7S6.5 12.2 6.5 8.6c0-3.2 2.2-5.8 5.5-5.8z"/><path d="M11 15.3h2l-1 1.5z"/><path d="M12 16.8c-1.6 1.4 1.6 2.6 0 4.4"/></svg></div>
+          <h3>Eventy dla dzieci</h3>
+          <p>Pikniki rodzinne i imprezy dla najmłodszych: dmuchańce, gry zręcznościowe i animacje prowadzone przez opiekunów — dobrane do wieku.</p>
+          <a class="link-arrow card-link" href="oferta.html#dla-dzieci">Szczegóły <span class="visually-hidden">— eventy dla dzieci</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ AGENCJA, NIE WYPOŻYCZALNIA ════════════════════════ -->
+  <section class="section on-sand" aria-labelledby="agencja-title" data-nav-clear>
+    <div class="container split">
+      <div class="split-lead reveal">
+        <p class="eyebrow">Kompleksowo</p>
+        <h2 id="agencja-title">Nie wypożyczalnia. <span class="hl">Agencja eventowa.</span></h2>
+        <p>Przygotowujemy scenariusz, zapewniamy instruktorów, sprzęt i transport, a przy większych imprezach także hotel i catering. Dostajesz gotowy plan dnia — bez koordynowania kilku podwykonawców naraz.</p>
+        <p class="big-quote">Odpowiedzialność za przebieg dnia — od pierwszej minuty do rozliczenia — jest po naszej stronie.</p>
+      </div>
+      <ul class="features">
+        <li class="feature reveal">
+          <div class="feature-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 6.5h11v9h-11z"/><path d="M13.5 9.5h4l3.5 3.5v2.5h-7.5"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="16.5" cy="17.5" r="1.8"/></svg></div>
+          <h3>Własny sprzęt</h3>
+          <p>Flota quadów, buggy i pojazdów terenowych oraz urządzenia rekreacyjne — od byka rodeo po bungee run i fotobudkę.</p>
+        </li>
+        <li class="feature reveal" style="--d:.06s">
+          <div class="feature-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6L12 3z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></div>
+          <h3>Instruktorzy przy atrakcjach</h3>
+          <p>Przed startem krótkie szkolenie, potem instruktor czuwa nad bezpieczeństwem. Poradzą sobie także osoby bez doświadczenia.</p>
+        </li>
+        <li class="feature reveal" style="--d:.12s">
+          <div class="feature-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.8 3.6-6 7-6s6.2 2.2 7 6"/><path d="M6.6 8.4A5.4 5.4 0 0 1 17.4 8.4"/></svg></div>
+          <h3>Jeden opiekun eventu</h3>
+          <p>Prowadzi Cię od pierwszych ustaleń do ostatniego gościa. Jeden numer telefonu zamiast pięciu.</p>
+        </li>
+        <li class="feature reveal" style="--d:.18s">
+          <div class="feature-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2.8h6V4"/><path d="M8.5 10h7M8.5 14h7M8.5 18h4"/></svg></div>
+          <h3>Logistyka od A do Z</h3>
+          <p>Miejsce, namioty, scena, nagłośnienie, catering, transport i hotel. Po imprezie demontaż i sprzątanie terenu.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ══ JAK DZIAŁAMY (trasa) ══════════════════════════════ -->
+  <section class="section" id="jak-dzialamy" aria-labelledby="proces-title">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow">Jak działamy</p>
+        <h2 id="proces-title">Pięć etapów od pomysłu do mety</h2>
+        <p>Na każdym etapie wiesz, co się dzieje i kto za co odpowiada.</p>
+      </div>
+
+      <div class="route" data-route>
+        <svg class="route-svg" aria-hidden="true">
+          <path class="route-base"/>
+          <path class="route-progress"/>
+          <circle class="route-rider-ring" r="9"/>
+          <circle class="route-rider" r="6"/>
+        </svg>
+        <ol class="route-steps">
+          <li class="route-step"><span class="route-dot"></span>
+            <div class="route-card"><span class="route-num">ETAP 01</span><h3>Rozmowa</h3>
+              <p>Cel wydarzenia, liczba osób, termin, miejsce i budżet. Wystarczy telefon albo e-mail — resztę dopytamy.</p></div></li>
+          <li class="route-step"><span class="route-dot"></span>
+            <div class="route-card"><span class="route-num">ETAP 02</span><h3>Scenariusz i wycena</h3>
+              <p>Proponujemy program z atrakcjami dobranymi do grupy, harmonogram dnia i jasną wycenę. Poprawiamy, aż będzie pasował.</p></div></li>
+          <li class="route-step"><span class="route-dot"></span>
+            <div class="route-card"><span class="route-num">ETAP 03</span><h3>Przygotowania</h3>
+              <p>Rezerwujemy miejsce, catering i noclegi, planujemy transport, kompletujemy sprzęt i instruktorów.</p></div></li>
+          <li class="route-step"><span class="route-dot"></span>
+            <div class="route-card"><span class="route-num">ETAP 04</span><h3>Dzień eventu</h3>
+              <p>Opiekun eventu na miejscu od pierwszej minuty, instruktorzy przy każdej atrakcji, szkolenie przed startem. Ty bawisz się z zespołem.</p></div></li>
+          <li class="route-step"><span class="route-dot"></span>
+            <div class="route-card"><span class="route-num">ETAP 05</span><h3>Po imprezie</h3>
+              <p>Demontaż, sprzątanie terenu i rozliczenie. A za rok — nowy scenariusz.</p></div></li>
+        </ol>
+        <div class="route-finish">
+          <span class="route-flag"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4"/><path d="M5 4h12l-2.5 4.5L17 13H5"/></svg>Meta — event zrealizowany</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ BUNKRY MRU ════════════════════════════════════════ -->
+  <section class="section-tight" aria-labelledby="mru-title" data-nav-clear>
+    <div class="container">
+      <div class="feature-band reveal">
+        <canvas data-topo="static" aria-hidden="true"></canvas>
+        <div class="feature-band-inner">
+          <p class="eyebrow">Wyjątkowe miejsce</p>
+          <h2 id="mru-title">Imprezy scenariuszowe w Bunkrach MRU</h2>
+          <p>Międzyrzecki Rejon Umocniony to jeden z największych systemów fortyfikacji w Europie. Przygotowujemy tu imprezy z fabułą, zadaniami i klimatem, którego nie da się odtworzyć w hotelowej sali.</p>
+          <ul class="facts">
+            <li><strong>30+ km</strong><span>podziemnych korytarzy</span></li>
+            <li><strong>1934–44</strong><span>lata budowy umocnień</span></li>
+            <li><strong>30 tys.</strong><span>nietoperzy zimuje w podziemiach</span></li>
+          </ul>
+          <div class="hero-actions">
+            <a href="oferta.html#bunkry-mru" class="btn btn-primary">Więcej o MRU
+              <svg class="ic arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a href="tel:+48513221622" class="btn btn-ghost">513 221 622</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ DLA KOGO ══════════════════════════════════════════ -->
+  <section class="section on-sand" aria-labelledby="dlakogo-title" data-nav-clear>
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Dla kogo</p>
+        <h2 id="dlakogo-title">Pracujemy z firmami, agencjami i samorządami</h2>
+      </div>
+      <ul class="audience">
+        <li class="aud-card reveal">
+          <div class="aud-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1.5 1.5 0 0 1 1.5-1.5h3A1.5 1.5 0 0 1 15 5v2"/><path d="M3 12.5h18"/></svg></div>
+          <h3>Działy HR i employer branding</h3>
+          <p>Integracje, jubileusze i pikniki rodzinne. Program skalujemy do wielkości zespołu i budżetu.</p>
+        </li>
+        <li class="aud-card reveal" style="--d:.06s">
+          <div class="aud-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5z"/><path d="m3 12.5 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg></div>
+          <h3>Agencje eventowe</h3>
+          <p>Podwykonawca z własnym sprzętem i instruktorami. Wchodzimy w Wasz scenariusz i dowozimy swoją część.</p>
+        </li>
+        <li class="aud-card reveal" style="--d:.12s">
+          <div class="aud-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5 12 4l9 5.5"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8"/><path d="M3 20.5h18"/></svg></div>
+          <h3>Samorządy i instytucje</h3>
+          <p>Festyny, dni miast i pikniki rodzinne — z kompletną strefą atrakcji i obsługą na miejscu.</p>
+        </li>
+        <li class="aud-card reveal" style="--d:.18s">
+          <div class="aud-icon"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8l-1 7a3 3 0 0 1-6 0L8 3z"/><path d="M12 13v7M8.5 20.5h7"/></svg></div>
+          <h3>Grupy prywatne</h3>
+          <p>Wieczory kawalerskie, wyjazdy ze znajomymi i imprezy w terenie — też z adrenaliną w programie.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ══ ZASIĘG ════════════════════════════════════════════ -->
+  <section class="section" id="zasieg" aria-labelledby="zasieg-title">
+    <div class="container reach">
+      <div class="reach-text reveal">
+        <p class="eyebrow">Zasięg</p>
+        <h2 id="zasieg-title">Dojeżdżamy z całym zapleczem</h2>
+        <p>Biuro mamy w Świebodzinie, a eventy robimy w lubuskim, wielkopolskim, dolnośląskim i zachodniopomorskim. Miejsce dobierzemy razem albo przyjedziemy na Twój teren.</p>
+        <ul class="city-list">
+          <li>Zielona Góra</li><li>Świebodzin</li><li>Poznań</li><li>Gorzów Wlkp.</li><li>Wrocław</li><li>Szczecin</li><li>Stargard</li><li>Karpacz</li><li>Szklarska Poręba</li>
+        </ul>
+      </div>
+
+      <div class="radar reveal" role="img" aria-label="Schematyczna mapa: Świebodzin w centrum, w promieniu do około 170 km Zielona Góra, Gorzów Wielkopolski, Poznań, Szczecin, Stargard, Wrocław, Karpacz i Szklarska Poręba.">
+        <div class="radar-sweep"></div>
+        <!-- Pozycje miast: rzut z szerokości/długości geograficznej, 1 km = 1,6 px, środek = Świebodzin -->
+        <svg viewBox="0 0 600 600" aria-hidden="true">
+          <line class="axis" x1="300" y1="20" x2="300" y2="580"/>
+          <line class="axis" x1="20" y1="300" x2="580" y2="300"/>
+          <circle class="ring" cx="300" cy="300" r="80"/>
+          <circle class="ring" cx="300" cy="300" r="160"/>
+          <circle class="ring" cx="300" cy="300" r="240"/>
+          <text class="ring-label" x="357" y="246">50 km</text>
+          <text class="ring-label" x="413" y="190">100 km</text>
+          <text class="ring-label" x="470" y="134">150 km</text>
+
+          <text class="region" x="40" y="40">ZACHODNIOPOMORSKIE</text>
+          <text class="region" x="400" y="352">WIELKOPOLSKIE</text>
+          <text class="region" x="340" y="452">DOLNOŚLĄSKIE</text>
+          <text class="region" x="70" y="396">LUBUSKIE</text>
+
+          <g class="mru"><path d="M293 273 L262 250"/><text x="168" y="246">Bunkry MRU</text></g>
+
+          <g class="city" data-d="1"><circle cx="297" cy="355" r="5"/><circle class="ping" cx="297" cy="355" r="4"/><text x="309" y="360">Zielona Góra</text></g>
+          <g class="city" data-d="2"><circle cx="268" cy="214" r="5"/><circle class="ping" cx="268" cy="214" r="4"/><text x="257" y="219" text-anchor="end">Gorzów Wlkp.</text></g>
+          <g class="city" data-d="3"><circle cx="452" cy="272" r="5"/><circle class="ping" cx="452" cy="272" r="4"/><text x="464" y="277">Poznań</text></g>
+          <g class="city" data-d="4"><circle cx="247" cy="107" r="5"/><circle class="ping" cx="247" cy="107" r="4"/><text x="259" y="112">Stargard</text></g>
+          <g class="city" data-d="5"><circle cx="193" cy="90" r="5"/><circle class="ping" cx="193" cy="90" r="4"/><text x="182" y="80" text-anchor="end">Szczecin</text></g>
+          <g class="city" data-d="6"><circle cx="464" cy="502" r="5"/><circle class="ping" cx="464" cy="502" r="4"/><text x="476" y="507">Wrocław</text></g>
+          <g class="city" data-d="7"><circle cx="299" cy="552" r="5"/><circle class="ping" cx="299" cy="552" r="4"/><text x="288" y="557" text-anchor="end">Szklarska Poręba</text></g>
+          <g class="city" data-d="8"><circle cx="325" cy="561" r="5"/><circle class="ping" cx="325" cy="561" r="4"/><text x="337" y="566">Karpacz</text></g>
+
+          <g class="home"><circle class="halo" cx="300" cy="300" r="16"/><circle cx="300" cy="300" r="7"/><text x="314" y="296">Świebodzin</text></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FAQ ═══════════════════════════════════════════════ -->
+  <section class="section on-sand" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow">FAQ</p>
+        <h2 id="faq-title">Najczęstsze pytania</h2>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>Czym różni się Adventure Quad od wypożyczalni quadów?</summary>
+          <div class="faq-body"><p>Jesteśmy agencją eventową, nie wypożyczalnią sprzętu. Zajmujemy się całą organizacją wydarzenia — od scenariusza, przez instruktorów i transport, po catering i logistykę na miejscu. Quady czy buggy to jedna z wielu atrakcji, a nie cała oferta.</p></div>
+        </details>
+        <details>
+          <summary>Dla ilu osób możecie zorganizować event?</summary>
+          <div class="faq-body"><p>Od kameralnych integracji dla kilkunastu osób po pikniki firmowe dla kilkuset uczestników z rodzinami. Dzięki własnemu sprzętowi skalujemy program bez szukania dodatkowych podwykonawców.</p></div>
+        </details>
+        <details>
+          <summary>Z jakim wyprzedzeniem trzeba się zgłosić?</summary>
+          <div class="faq-body"><p>Mniejsze integracje da się przygotować w kilka tygodni. Duże pikniki firmowe warto planować z kilkumiesięcznym wyprzedzeniem — szczególnie na sezon wiosenno-letni, gdy terminy schodzą najszybciej.</p></div>
+        </details>
+        <details>
+          <summary>Czy program można dopasować do budżetu?</summary>
+          <div class="faq-body"><p>Tak. Program budujemy indywidualnie na podstawie budżetu, liczby uczestników i celu wydarzenia. Może to być jedna główna atrakcja, np. paintball, albo kilka aktywności połączonych w scenariusz na cały dzień.</p></div>
+        </details>
+        <details>
+          <summary>Czy zajmujecie się noclegami i wyżywieniem?</summary>
+          <div class="faq-body"><p>Tak — przy większych wydarzeniach, zwłaszcza wyjazdach integracyjnych, zapewniamy hotel i catering. Nie trzeba ustalać tego osobno z innym dostawcą.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ KONTAKT ═══════════════════════════════════════════ -->
+  <section class="section" id="kontakt" aria-labelledby="kontakt-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Kontakt</p>
+        <h2 id="kontakt-title">Porozmawiajmy o Twoim evencie</h2>
+        <p>Zadzwoń do osoby od konkretnego tematu albo napisz — przygotujemy propozycję programu z wyceną.</p>
+      </div>
+
+      <div class="contact">
+        <div class="contact-main reveal">
+          <ul class="phones">
+            <li><a class="phone-card main" href="tel:+48603805651"><span><span class="topic">Pikniki firmowe, duże eventy</span><span class="num">603 805 651</span></span><span class="call"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span></a></li>
+            <li><a class="phone-card" href="tel:+48515602802"><span><span class="topic">Wyjazdy na quadach, paintball</span><span class="num">515 602 802</span></span><span class="call"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span></a></li>
+            <li><a class="phone-card" href="tel:+48513221622"><span><span class="topic">Imprezy scenariuszowe, Bunkry MRU</span><span class="num">513 221 622</span></span><span class="call"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span></a></li>
+            <li><a class="phone-card" href="mailto:norbert@adventurequad.pl"><span><span class="topic">E-mail</span><span class="num mail">norbert@adventurequad.pl</span></span><span class="call"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg></span></a></li>
+          </ul>
+
+          <div class="prep">
+            <h3>Przy pierwszej rozmowie przydadzą się</h3>
+            <ul class="checklist">
+              <li>termin — choćby orientacyjny,</li>
+              <li>liczba uczestników,</li>
+              <li>miejsce albo region,</li>
+              <li>okazja i budżet.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contact-side reveal" style="--d:.08s">
+          <div class="map-box" id="mapBox">
+            <div class="map-consent">
+              <canvas data-topo="static" aria-hidden="true"></canvas>
+              <button type="button" class="btn btn-ghost" id="mapLoad">
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+                Pokaż mapę dojazdu</button>
+              <p>Mapa Google wczyta się dopiero po kliknięciu — wtedy Google może zapisać pliki cookies.</p>
+            </div>
+          </div>
+          <ul class="contact-meta">
+            <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span><strong>Biuro handlowe</strong><br>Kupienino 14, 66-200 Świebodzin</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21h3.1z"/></svg><span><a href="https://www.facebook.com/imprezyintegracyjne/" target="_blank" rel="noopener noreferrer">facebook.com/imprezyintegracyjne</a></span></li>
+            <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg><span>NIP 9271461746 · REGON 978108378</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="assets/js/components.js"></script>
+<script src="assets/js/demo-theme.js"></script>
+<script src="assets/js/topo.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
