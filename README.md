@@ -46,8 +46,8 @@ Wszystkie kolory są w zmiennych CSS (`:root` w `style.css`). Warianty: **Nocny 
 
 ## Deploy
 
-Repozytorium: https://github.com/commitpanic/adventurequads · DEV: https://commitpanic.github.io/adventurequads/ (po włączeniu Pages)
+Repozytorium: https://github.com/commitpanic/adventurequads · DEV: https://commitpanic.github.io/adventurequads/
 
-Push na `main` → GitHub Actions (`.github/workflows/pages.yml`) → GitHub Pages. Publikowane są pliki strony bez `dane/`, `.claude/`, `.github/` i `*.md`. W repo: Settings → Pages → Source: „GitHub Actions”.
+Push na `main` → GitHub Actions (`.github/workflows/pages.yml`) → GitHub Pages. Publikowane są pliki strony bez `dane/`, `.claude/`, `.github/` i `*.md`. W repo Pages ma źródło „GitHub Actions” (włączone).
 
 PROD: do ustalenia. **Domena adventurequad.pl ma pocztę — przy zmianie DNS nie ruszać rekordów MX.** Stara strona ma dużo adresów `/oferta/...` → przekierowania 301 (lista w `TODO.md`).

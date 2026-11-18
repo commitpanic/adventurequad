@@ -22,7 +22,7 @@
 
 ## Technika
 - [x] Repozytorium `commitpanic/adventurequads` + workflow GitHub Pages
-- [ ] Włączyć Pages (Settings → Pages → GitHub Actions) po pierwszym pushu
+- [x] Pages włączone (GitHub Actions) — DEV: https://commitpanic.github.io/adventurequads/
 - [x] Bez formularza i konfiguratora — kontakt tylko dane kontaktowe (uzgodnione z klientem)
 - [ ] Przed PROD: usunąć `assets/js/demo-theme.js`, jego `<script>` i fragment `?motyw` w `<head>`
 - [ ] Lighthouse na DEV (Performance / Accessibility / SEO ≥ 90)
